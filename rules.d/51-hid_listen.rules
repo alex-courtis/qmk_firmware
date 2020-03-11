@@ -1,0 +1,5 @@
+# https://www.pjrc.com/teensy/hid_listen.html
+# https://docs.qmk.fm/#/faq_debug?id=linux-or-unix-like-system-requires-super-user-privilege
+#
+# tmk keyboard products     https://github.com/tmk/tmk_keyboard
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="feed", MODE:="0666"
