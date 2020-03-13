@@ -6,7 +6,7 @@ MOUSEKEY_ENABLE = no
 RGBLIGHT_ENABLE = no
 
 # debug print statements will be preprocessor'd out unless yes
-CONSOLE_ENABLE = ye
+CONSOLE_ENABLE = no
 
 REL_PATH = keyboards/hhkb/keymaps/amc
 
