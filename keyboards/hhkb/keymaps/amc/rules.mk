@@ -4,6 +4,7 @@ LINK_TIME_OPTIMIZATION_ENABLE = yes
 COMMAND_ENABLE = yes
 MOUSEKEY_ENABLE = no
 RGBLIGHT_ENABLE = no
+NKRO_ENABLE = yes
 
 # debug print statements will be preprocessor'd out unless yes
 CONSOLE_ENABLE = no
