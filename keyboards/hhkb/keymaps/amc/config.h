@@ -7,6 +7,5 @@
 // default 200 keyboards/hhkb/config.h
 #define TAPPING_TERM  200
 
-#undef TAPPING_TOGGLE
-// default 1 tmk_core/common/config.h
-#define TAPPING_TOGGLE 1
+// dual function modifiers are sluggish with the default 1
+#define QMK_KEYS_PER_SCAN 4
