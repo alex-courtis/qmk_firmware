@@ -9,13 +9,13 @@ static uint16_t caps_lock_resets = 0;
 static uint16_t left_squishes = 0;
 static uint16_t right_squishes = 0;
 
-#define LMODS (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_LCTRL) | MOD_BIT(KC_LGUI) | MOD_BIT(KC_LALT))
+#define LMODS (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_LCTRL) | MOD_BIT(KC_LALT))
 #define L_ROW_LOW 1
 #define L_ROW_HIGH 5
 #define L_COL_LOW 0
 #define L_COL_HIGH 3
 
-#define RMODS (MOD_BIT(KC_RSHIFT) | MOD_BIT(KC_RCTRL) | MOD_BIT(KC_RGUI) | MOD_BIT(KC_RALT))
+#define RMODS (MOD_BIT(KC_RSHIFT) | MOD_BIT(KC_RCTRL) | MOD_BIT(KC_RALT))
 #define R_ROW_LOW 8
 #define R_ROW_HIGH 12
 #define R_COL_LOW 0
@@ -48,13 +48,6 @@ uint32_t default_layer_state_set_user(uint32_t state) {
 		ergodox_right_led_3_off();
 	}
 
-	// default layer 2 green
-	if (layer == 2) {
-		ergodox_right_led_2_on();
-	} else {
-		ergodox_right_led_2_off();
-	}
-
 	return state;
 }
 
@@ -63,8 +56,8 @@ uint32_t layer_state_set_user(uint32_t state) {
 
 	dprintf("layer_state_set_user layer=%u num_lock_sets=%u caps_lock_resets=%u left_squishes=%u right_squishes=%u\n", layer, num_lock_sets, caps_lock_resets, left_squishes, right_squishes);
 
-	// fn layer 3 red
-	if (layer == 3) {
+	// fn layer 2 red
+	if (layer == 2) {
 		ergodox_right_led_1_on();
 	} else {
 		ergodox_right_led_1_off();
