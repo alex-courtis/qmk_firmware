@@ -9,6 +9,8 @@ static uint16_t caps_lock_resets = 0;
 static uint16_t left_squishes = 0;
 static uint16_t right_squishes = 0;
 
+static uint8_t default_layer = 0;
+
 #define LMODS (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_LCTRL) | MOD_BIT(KC_LALT))
 #define L_ROW_LOW 1
 #define L_ROW_HIGH 5
@@ -37,12 +39,12 @@ void suspend_power_down_user(void) {
 }
 
 uint32_t default_layer_state_set_user(uint32_t state) {
-	uint8_t layer = biton32(state);
+	default_layer = biton32(state);
 
-	dprintf("default_layer_state_set_user layer=%u\n", layer);
+	dprintf("default_layer_state_set_user default_layer=%u\n", default_layer);
 
 	// default layer 1 blue
-	if (layer == 1) {
+	if (default_layer == 1) {
 		ergodox_right_led_3_on();
 	} else {
 		ergodox_right_led_3_off();
@@ -54,7 +56,7 @@ uint32_t default_layer_state_set_user(uint32_t state) {
 uint32_t layer_state_set_user(uint32_t state) {
 	uint8_t layer = biton32(state);
 
-	dprintf("layer_state_set_user layer=%u num_lock_sets=%u caps_lock_resets=%u left_squishes=%u right_squishes=%u\n", layer, num_lock_sets, caps_lock_resets, left_squishes, right_squishes);
+	dprintf("layer_state_set_user layer=%u default_layer=%u num_lock_sets=%u caps_lock_resets=%u left_squishes=%u right_squishes=%u\n", layer, default_layer, num_lock_sets, caps_lock_resets, left_squishes, right_squishes);
 
 	// fn layer 2 red
 	if (layer == 2) {
@@ -68,6 +70,10 @@ uint32_t layer_state_set_user(uint32_t state) {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	static uint8_t mods;
+
+	if (default_layer != 0) {
+		return true;
+	}
 
 	mods = get_mods();
 
