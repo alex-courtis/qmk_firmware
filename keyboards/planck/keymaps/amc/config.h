@@ -8,9 +8,8 @@
 
 #define ENCODER_RESOLUTION 4
 
-// todo: what function do these two have?
+// needed to enable the front teeth and LED_LEVEL
 #define ORYX_CONFIGURATOR
-#define FIRMWARE_VERSION u8"Qaw5D/RQRK4"
 
 // layers in this repo are different to zsa
 #define PLANCK_EZ_LED_LOWER 1
