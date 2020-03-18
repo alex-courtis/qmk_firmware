@@ -8,9 +8,10 @@
 
 #define ENCODER_RESOLUTION 4
 
-/*
-  Set any config.h overrides for your specific keymap here.
-  See config.h options at https://docs.qmk.fm/#/config_options?id=the-configh-file
-*/
+// todo: what function do these two have?
 #define ORYX_CONFIGURATOR
 #define FIRMWARE_VERSION u8"Qaw5D/RQRK4"
+
+#define PLANCK_EZ_LED_LOWER 1
+#define PLANCK_EZ_LED_RAISE 2
+#define PLANCK_EZ_LED_ADJUST 3
