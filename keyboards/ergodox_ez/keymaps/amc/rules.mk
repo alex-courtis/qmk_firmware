@@ -1,12 +1,12 @@
 # Set any rules.mk overrides for your specific keymap here.
 # See rules at https://docs.qmk.fm/#/config_options?id=the-rulesmk-file
 LINK_TIME_OPTIMIZATION_ENABLE = yes
-COMMAND_ENABLE = no
+COMMAND_ENABLE = yes
 MOUSEKEY_ENABLE = no
 RGBLIGHT_ENABLE = no
 
 # debug print statements will be preprocessor'd out unless yes
-CONSOLE_ENABLE = no
+CONSOLE_ENABLE = yes
 
 REL_PATH = keyboards/ergodox_ez/keymaps/amc
 
