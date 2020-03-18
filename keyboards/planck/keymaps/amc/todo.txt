@@ -1,4 +1,2 @@
-- remove audio keys; default is fine and music is fluff
-- more RGB setting keys
 - adjust key to swap lower with a modifier
 - alternate map for left hand in middle, using shifted qwerty
