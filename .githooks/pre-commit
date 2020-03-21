@@ -8,6 +8,7 @@ git diff --staged --name-only --diff-filter=ACM | while read f; do
 			echo "jq'ing ${f}"
 			jq < "${f}" > "${f}.formatted"
 			mv "${f}.formatted" "${f}"
+			git add "${f}"
 			;;
 		*)
 			;;
