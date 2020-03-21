@@ -3,9 +3,9 @@
 LINK_TIME_OPTIMIZATION_ENABLE = yes
 MOUSEKEY_ENABLE = no
 RGBLIGHT_ENABLE = no
+COMMAND_ENABLE = yes
 
 # don't have two devices enabled as hid_listen has no way of differentiating; this is for debug only
-COMMAND_ENABLE = no
 CONSOLE_ENABLE = no
 
 REL_PATH = keyboards/ergodox_ez/keymaps/amc
