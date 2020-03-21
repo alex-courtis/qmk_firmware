@@ -11,13 +11,13 @@ static uint16_t right_squishes = 0;
 
 static uint8_t default_layer = 0;
 
-#define LMODS (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_LCTRL) | MOD_BIT(KC_LALT))
+#define LMODS (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_LCTRL) | MOD_BIT(KC_LALT) | MOD_BIT(KC_LGUI))
 #define L_ROW_LOW 1
 #define L_ROW_HIGH 5
 #define L_COL_LOW 0
 #define L_COL_HIGH 3
 
-#define RMODS (MOD_BIT(KC_RSHIFT) | MOD_BIT(KC_RCTRL) | MOD_BIT(KC_RALT))
+#define RMODS (MOD_BIT(KC_RSHIFT) | MOD_BIT(KC_RCTRL) | MOD_BIT(KC_RALT) | MOD_BIT(KC_RGUI))
 #define R_ROW_LOW 8
 #define R_ROW_HIGH 12
 #define R_COL_LOW 0
