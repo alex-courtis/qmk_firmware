@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# uses jq to format any staged files ending with "json"
+#
+git diff --staged --name-only --diff-filter=ACM | while read f; do
+	case "${f}" in
+		*json)
+			echo "jq'ing ${f}"
+			jq < "${f}" > "${f}.formatted"
+			mv "${f}.formatted" "${f}"
+			;;
+		*)
+			;;
+	esac
+done
