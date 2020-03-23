@@ -13,7 +13,5 @@ REL_PATH = keyboards/hhkb/keymaps/amc
 
 SRC += $(KEYBOARD_OUTPUT)/src/keymap_gen.c
 
-#$(foreach V, $(sort $(.VARIABLES)), $(info $V=$(value $V)))
-
 $(KEYBOARD_OUTPUT)/src/keymap_gen.c: $(REL_PATH)/amc.json
 	bin/qmk json2c --output $(KEYBOARD_OUTPUT)/src/keymap_gen.c $(REL_PATH)/amc.json
