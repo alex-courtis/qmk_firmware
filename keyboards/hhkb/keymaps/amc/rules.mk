@@ -4,16 +4,18 @@ LINK_TIME_OPTIMIZATION_ENABLE = yes
 MOUSEKEY_ENABLE = no
 RGBLIGHT_ENABLE = no
 NKRO_ENABLE = yes
-COMMAND_ENABLE = yes
 
 # don't have two devices enabled as hid_listen has no way of differentiating; this is for debug only
-CONSOLE_ENABLE = no
+COMMAND_ENABLE = yes
+CONSOLE_ENABLE = yes
 
 REL_PATH = keyboards/hhkb/keymaps/amc
 
-SRC += $(KEYBOARD_OUTPUT)/src/keymap_gen.c
+SRC += keymap_gen.c
+
+#SRC += $(KEYBOARD_OUTPUT)/src/keymap_gen.c
 
 #$(foreach V, $(sort $(.VARIABLES)), $(info $V=$(value $V)))
 
-$(KEYBOARD_OUTPUT)/src/keymap_gen.c: $(REL_PATH)/amc.json
-	bin/qmk json2c --output $(KEYBOARD_OUTPUT)/src/keymap_gen.c $(REL_PATH)/amc.json
+#$(KEYBOARD_OUTPUT)/src/keymap_gen.c: $(REL_PATH)/amc.json
+	#bin/qmk json2c --output $(KEYBOARD_OUTPUT)/src/keymap_gen.c $(REL_PATH)/amc.json
