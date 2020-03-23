@@ -5,7 +5,7 @@
 
 #undef TAPPING_TERM
 // default 200 keyboards/hhkb/config.h
-#define TAPPING_TERM  200
+#define TAPPING_TERM  150
 
 // dual function modifiers are sluggish with the default 1
 #define QMK_KEYS_PER_SCAN 4
