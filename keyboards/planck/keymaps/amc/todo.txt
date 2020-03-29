@@ -1,3 +1,3 @@
 - adjust key to swap lower with a modifier
-- alternate map for left hand in middle, using shifted qwerty
+- alternate map for left hand in middle, using shifted qwerty, for gaming
 - put debug / feedback on the LED HSV
