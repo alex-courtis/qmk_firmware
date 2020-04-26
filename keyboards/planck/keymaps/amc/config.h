@@ -1,13 +1,5 @@
 #pragma once
 
-#ifdef AUDIO_ENABLE
-#define STARTUP_SONG SONG(PLANCK_SOUND)
-#endif
-
-#define MIDI_BASIC
-
-#define ENCODER_RESOLUTION 4
-
 // needed to enable the front teeth and LED_LEVEL
 #define ORYX_CONFIGURATOR
 
