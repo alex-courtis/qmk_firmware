@@ -6,9 +6,8 @@ RGBLIGHT_ENABLE = no
 NKRO_ENABLE = yes
 
 # don't have two devices enabled as hid_listen has no way of differentiating; this is for debug only
-<<<<<<< HEAD
 COMMAND_ENABLE = yes
-CONSOLE_ENABLE = yes
+CONSOLE_ENABLE = no
 
 REL_PATH = keyboards/hhkb/keymaps/amc
 
@@ -20,6 +19,3 @@ SRC += keymap_gen.c
 
 #$(KEYBOARD_OUTPUT)/src/keymap_gen.c: $(REL_PATH)/amc.json
 	#bin/qmk json2c --output $(KEYBOARD_OUTPUT)/src/keymap_gen.c $(REL_PATH)/amc.json
-=======
-CONSOLE_ENABLE = no
->>>>>>> 2d3d6d6590 (hhkb: inline the c generated from json)
