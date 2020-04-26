@@ -105,21 +105,11 @@ void encoder_update(bool clockwise) {
         }
     } else {
         if (clockwise) {
-        #ifdef MOUSEKEY_ENABLE
-            register_code(KC_MS_WH_DOWN);
-            unregister_code(KC_MS_WH_DOWN);
-        #else
             register_code(KC_PGDN);
             unregister_code(KC_PGDN);
-        #endif
         } else {
-        #ifdef MOUSEKEY_ENABLE
-            register_code(KC_MS_WH_UP);
-            unregister_code(KC_MS_WH_UP);
-        #else
             register_code(KC_PGUP);
-            unregister_code(KC_PGUP);
-        #endif
+            unregister_codE(KC_PGUP);
         }
     }
 }

@@ -3,8 +3,6 @@ SRC += muse.c
 # See rules at https://docs.qmk.fm/#/config_options?id=the-rulesmk-file
 LINK_TIME_OPTIMIZATION_ENABLE = yes
 MOUSEKEY_ENABLE = no
-WEBUSB_ENABLE = yes
-ORYX_ENABLE = yes
 COMMAND_ENABLE = no
 
 # don't have two devices enabled as hid_listen has no way of differentiating; this is for debug only
