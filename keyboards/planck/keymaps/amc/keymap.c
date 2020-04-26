@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             RGB_TOG,      RGB_MOD,      RGB_HUI,      RGB_SAI,      RGB_VAI,      RGB_SPI,      KC_NO,        KC_NO,        KC_NO,        EEP_RST,      RESET,        DEBUG,
             KC_NO,        RGB_RMOD,     RGB_HUD,      RGB_SAD,      RGB_VAD,      RGB_SPD,      KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,
             KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,
-            NK_TOGG,      KC_TRNS,      KC_NO,        KC_NO,        KC_NO,               KC_NO,               KC_TRNS,      KC_NO,        KC_NO,        KC_NO,        LED_LEVEL
+            KC_NO,        KC_TRNS,      KC_NO,        KC_NO,        KC_NO,               KC_NO,               KC_TRNS,      KC_NO,        KC_NO,        KC_NO,        LED_LEVEL
             ),
 };
 
@@ -41,3 +41,6 @@ uint32_t layer_state_set_user(uint32_t state) {
     return update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);
 }
 
+void keyboard_post_init_user(void) {
+    keymap_config.nkro = true;
+}
