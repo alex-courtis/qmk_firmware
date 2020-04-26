@@ -9,8 +9,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_NO, KC_PSTE, KC_COPY, KC_LEFT, KC_RGHT, KC_UP, KC_DOWN, KC_RBRC, LSFT(KC_INS), KC_NO,
 
             KC_TAB, KC_LALT, KC_RALT, KC_DEL,
-            KC_NO, KC_NO, KC_BSPC, KC_ESC,
-            KC_NO, KC_NO, KC_ENT, KC_SPC
+            KC_NO, KC_NO,
+            KC_BSPC, KC_ESC, KC_NO, KC_NO, KC_ENT, KC_SPC
             ),
     [1] = LAYOUT_ergodox_pretty(
             KC_NO, KC_NO, KC_NO, KC_NO, KC_PSCR, KC_SLCK, KC_PAUS, KC_INS, KC_NO, KC_NLCK, KC_PSLS, KC_PAST, KC_PMNS, KC_NO,
@@ -20,8 +20,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_P0, KC_P0, KC_PDOT, KC_PENT, KC_NO,
 
             KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-            KC_NO, KC_NO, KC_TRNS, KC_TRNS,
-            KC_NO, KC_NO, KC_TRNS, KC_TRNS
+            KC_NO, KC_NO,
+            KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_TRNS, KC_TRNS
             ),
 };
 
