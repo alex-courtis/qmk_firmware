@@ -2,11 +2,6 @@
 #ifdef AUDIO_ENABLE
 #include "muse.h"
 #endif
-#include "eeprom.h"
-
-enum planck_keycodes {
-    RGB_SLD = EZ_SAFE_RANGE,
-};
 
 enum planck_layers {
     _BASE,
@@ -44,17 +39,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             NK_TOGG,      KC_TRNS,      KC_NO,        KC_NO,        KC_NO,               KC_NO,               KC_TRNS,      KC_NO,        KC_NO,        KC_NO,        LED_LEVEL
             ),
 };
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case RGB_SLD:
-            if (record->event.pressed) {
-                rgblight_mode(1);
-            }
-            return false;
-    }
-    return true;
-}
 
 #ifdef AUDIO_ENABLE
 bool muse_mode = false;
