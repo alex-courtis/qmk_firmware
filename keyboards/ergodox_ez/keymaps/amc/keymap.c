@@ -42,30 +42,29 @@ void suspend_power_down_user(void) {
 uint32_t layer_state_set_user(uint32_t state) {
     uint8_t layer = biton32(state);
 
-    // red
-    if (layer == 1) {
-        ergodox_right_led_1_on();
-    } else {
-        ergodox_right_led_1_off();
-    }
+    // blue
+    if (layer == 1)
+        ergodox_right_led_3_on();
+    else
+        ergodox_right_led_3_off();
 
     return state;
 };
 
-void matrix_scan_user(void) {
-    static uint16_t lock_check_timer = 0;
-    static led_t led_state;
 
-    if (lock_check_timer == 0) {
-        lock_check_timer = timer_read();
-    }
+bool led_update_user(led_t led_state) {
 
-    if (timer_elapsed(lock_check_timer) > 500) {
-        led_state = host_keyboard_led_state();
-        if (!led_state.num_lock)
-            SEND_STRING(SS_TAP(X_NUMLOCK));
-        if (led_state.caps_lock)
-            SEND_STRING(SS_TAP(X_CAPSLOCK));
-        lock_check_timer = timer_read();
-    }
+    // red
+    if (led_state.caps_lock)
+        ergodox_right_led_1_on();
+    else
+        ergodox_right_led_1_off();
+
+    // green
+    if (led_state.num_lock)
+        ergodox_right_led_2_on();
+    else
+        ergodox_right_led_2_off();
+
+    return true;
 }
