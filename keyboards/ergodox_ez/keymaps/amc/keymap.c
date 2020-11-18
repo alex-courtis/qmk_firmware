@@ -23,14 +23,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             ),
 };
 
-extern keymap_config_t keymap_config;
+//extern keymap_config_t keymap_config;
 
 void keyboard_post_init_user(void) {
     ergodox_right_led_1_set(LED_BRIGHTNESS_LO);
     ergodox_right_led_2_set(LED_BRIGHTNESS_LO);
     ergodox_right_led_3_set(LED_BRIGHTNESS_LO);
 
-    keymap_config.nkro = true;
+    // very curious: this causes dfk to fail
+    //keymap_config.nkro = true;
 }
 
 void suspend_power_down_user(void) {
