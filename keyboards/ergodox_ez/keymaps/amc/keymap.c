@@ -14,7 +14,7 @@ void keyboard_post_init_user(void) {
     ergodox_right_led_2_set(LED_BRIGHTNESS_REALLY_LO);
     ergodox_right_led_3_set(LED_BRIGHTNESS_REALLY_LO);
 
-    // very curious: this causes dfk to fail
+    // https://gitlab.com/interception/linux/plugins/dual-function-keys/-/issues/16
     //keymap_config.nkro = true;
 }
 
