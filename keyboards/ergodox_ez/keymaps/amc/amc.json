@@ -143,7 +143,7 @@
       "KC_NO",
       "KC_LEFT",
       "KC_RGHT",
-      "KC_NO",
+      "KC_LALT",
       "KC_NO",
       "KC_UP",
       "KC_DOWN",
@@ -156,8 +156,8 @@
       "KC_TRNS",
       "KC_TRNS",
       "KC_SPC",
-      "KC_LALT",
       "KC_LCTL",
+      "KC_TAB",
       "KC_DEL",
       "KC_BSPC",
       "KC_ENT"
