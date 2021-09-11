@@ -42,7 +42,7 @@
       "KC_I",
       "KC_O",
       "KC_P",
-      "KC_BSLS",
+      "KC_LBRC",
       "KC_CAPS",
       "KC_A",
       "KC_S",
@@ -80,8 +80,8 @@
       "KC_NO",
       "KC_RGUI",
       "KC_TAB",
-      "TT(1)",
-      "TT(1)",
+      "KC_NO",
+      "KC_NO",
       "KC_DEL"
     ]
   ],
