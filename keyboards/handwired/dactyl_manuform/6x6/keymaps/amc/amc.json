@@ -75,14 +75,14 @@
       "KC_ESC",
       "KC_ENT",
       "KC_SPC",
-      "KC_LGUI",
-      "KC_NO",
-      "KC_NO",
-      "KC_RGUI",
       "KC_TAB",
+      "KC_LGUI",
+      "KC_RGUI",
+      "KC_DEL",
+      "KC_BSLS",
       "KC_NO",
       "KC_NO",
-      "KC_DEL"
+      "KC_BSLS"
     ]
   ],
   "author": ""

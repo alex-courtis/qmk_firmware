@@ -7,6 +7,6 @@ BOOTLOADER = atmel-dfu
 Program the left first then disable MASTER_LEFT and program right
 
 
-qmk json2c amc.json
+qmk json2c amc.json > keymap.c
 qmk flash -kb handwired/dactyl_manuform/6x6 -km amc
 
