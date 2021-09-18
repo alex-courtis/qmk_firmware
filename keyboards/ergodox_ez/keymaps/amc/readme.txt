@@ -4,6 +4,6 @@ MCU = atmega32u4
 16c0:0478 Van Ooijen Technische Informatica Teensy Halfkay Bootloader
 
 
-qmk json2c amc.json
+qmk json2c amc.json > km.c
 qmk flash -kb ergodox_ez -km amc
 
