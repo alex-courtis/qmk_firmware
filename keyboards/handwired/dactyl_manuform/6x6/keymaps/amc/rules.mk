@@ -1,1 +1,4 @@
 BOOTLOADER = atmel-dfu
+
+NKRO_ENABLE = yes
+MOUSEKEY_ENABLE = no
