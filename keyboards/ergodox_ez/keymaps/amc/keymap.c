@@ -11,12 +11,6 @@ void keyboard_post_init_user(void) {
     //keymap_config.nkro = true;
 }
 
-void suspend_power_down_user(void) {
-    ergodox_right_led_1_off();
-    ergodox_right_led_2_off();
-    ergodox_right_led_3_off();
-}
-
 layer_state_t layer_state_set_user(layer_state_t layer_state) {
     uint8_t layer = biton32(layer_state);
 
@@ -41,7 +35,6 @@ layer_state_t layer_state_set_user(layer_state_t layer_state) {
     return layer_state;
 };
 
-// when udevmon is running: led_state here and from host_keyboard_led_state() is not correct until one changes
 bool led_update_user(led_t led_state) {
 
     if ((layer_state_is(0) || layer_state_is(1)) && led_state.caps_lock) {
