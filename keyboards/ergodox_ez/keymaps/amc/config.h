@@ -11,6 +11,6 @@
 
 // ergodox_ez default 30
 #undef DEBOUNCE
-#define DEBOUNCE 5
+#define DEBOUNCE 10
 
 #define QMK_KEYS_PER_SCAN 4
