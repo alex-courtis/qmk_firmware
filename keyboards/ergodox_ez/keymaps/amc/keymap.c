@@ -37,17 +37,10 @@ layer_state_t layer_state_set_user(layer_state_t layer_state) {
 
 bool led_update_user(led_t led_state) {
 
-    if ((layer_state_is(0) || layer_state_is(1)) && led_state.caps_lock) {
-
-        // red capslock for layer 0 and 1
-        ergodox_right_led_1_on();
-    } else if (layer_state_is(2) && led_state.num_lock) {
-
-        // red numlock for layer 2
+    // red caps
+    if (led_state.caps_lock) {
         ergodox_right_led_1_on();
     } else {
-
-        // off elsewhere
         ergodox_right_led_1_off();
     }
 
