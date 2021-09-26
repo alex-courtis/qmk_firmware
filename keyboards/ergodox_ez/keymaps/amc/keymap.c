@@ -3,10 +3,6 @@
 extern keymap_config_t keymap_config;
 
 void keyboard_post_init_user(void) {
-    ergodox_right_led_1_set(LED_BRIGHTNESS_REALLY_LO);
-    ergodox_right_led_2_set(LED_BRIGHTNESS_REALLY_LO);
-    ergodox_right_led_3_set(LED_BRIGHTNESS_REALLY_LO);
-
     keymap_config.nkro = true;
 }
 
