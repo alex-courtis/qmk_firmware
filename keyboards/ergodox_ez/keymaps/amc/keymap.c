@@ -1,5 +1,7 @@
 #include "km.c"
 
+layer_state_t p_layer_state = 0;
+
 extern keymap_config_t keymap_config;
 
 void keyboard_post_init_user(void) {
@@ -11,7 +13,21 @@ void keyboard_post_init_user(void) {
     //keymap_config.nkro = true;
 }
 
+void suspend_wakeup_init_user(void) {
+    layer_state_set_user(p_layer_state);
+
+    // led_update_user is automatically called
+}
+
+void suspend_power_down_user(void) {
+    ergodox_right_led_1_off();
+    ergodox_right_led_2_off();
+    ergodox_right_led_3_off();
+}
+
 layer_state_t layer_state_set_user(layer_state_t layer_state) {
+    p_layer_state = layer_state;
+
     uint8_t layer = biton32(layer_state);
 
     // layer indicator
