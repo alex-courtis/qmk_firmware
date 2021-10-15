@@ -17,6 +17,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
+//#define PRODUCT    Dactyl-Manuform (6x6)
+#undef PRODUCT
+#define PRODUCT    Dactyl-Manuform-6x6
+
 #define USE_SERIAL
 
 #define MASTER_LEFT
