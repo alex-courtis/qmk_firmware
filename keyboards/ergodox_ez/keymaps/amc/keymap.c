@@ -2,12 +2,6 @@
 
 layer_state_t p_layer_state = 0;
 
-extern keymap_config_t keymap_config;
-
-void keyboard_post_init_user(void) {
-    keymap_config.nkro = true;
-}
-
 void suspend_wakeup_init_user(void) {
     layer_state_set_user(p_layer_state);
 
