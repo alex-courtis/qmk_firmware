@@ -17,6 +17,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
+// this is necessary only for the right side !?
+#ifdef NKRO_ENABLE
+#define FORCE_NKRO
+#endif
+
 //#define PRODUCT    Dactyl-Manuform (6x6)
 #undef PRODUCT
 #define PRODUCT    Dactyl-Manuform-6x6
