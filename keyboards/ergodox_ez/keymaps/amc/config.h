@@ -7,8 +7,13 @@
 #define FORCE_NKRO
 #endif
 
-// ergodox_ez default 30
-#undef DEBOUNCE
-#define DEBOUNCE 20
+// ergodox_ez: 30
+// #define DEBOUNCE
 
+// qmk: sym_defer_g
+// ergodox_ez: sym_eager_pr
+// #define DEBOUNCE_TYPE
+
+// qmk: 0
 #define QMK_KEYS_PER_SCAN 4
+
