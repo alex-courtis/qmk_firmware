@@ -17,3 +17,8 @@
 // qmk: 0
 #define QMK_KEYS_PER_SCAN 4
 
+// ergodox_ez: 255
+// this can only be used when the keyboard is on; the duty cycle is messed up when asleep
+#undef LED_BRIGHTNESS_DEFAULT
+#define LED_BRIGHTNESS_DEFAULT 1
+
