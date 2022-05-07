@@ -6,5 +6,5 @@ BOOTLOADER = atmel-dfu
 ~/.dotfiles/usr/lib/udev/rules.d/50-amc-hhkb.rules
 
 qmk json2c amc.json > km.c
-qmk flash -kb hhkb/ansi -km amc
+util/docker_build.sh hhkb/ansi:amc:flash
 
