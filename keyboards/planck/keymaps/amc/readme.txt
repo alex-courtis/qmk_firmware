@@ -7,5 +7,5 @@ dfu-util:
 /usr/lib/udev/rules.d/60-dfuse.rules
 
 qmk json2c amc.json > km.c
-qmk flash -kb planck/ez/glow -km amc
+util/docker_build.sh planck/ez/glow:amc:flash
 

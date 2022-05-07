@@ -7,5 +7,4 @@ teensy-loader-cli:
 /usr/lib/udev/rules.d/00-teensy.rules
 
 qmk json2c amc.json > km.c
-qmk flash -kb ergodox_ez -km amc
-
+util/docker_build.sh ergodox_ez:amc:flash

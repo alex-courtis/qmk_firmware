@@ -50,10 +50,10 @@ layer_state_t layer_state_set_user(layer_state_t layer_state) {
             keymap_config.nkro = 1;
             break;
         case 3:
-            // red - reverse dvorak gaming
-            ergodox_right_led_1_on();
-            ergodox_right_led_2_off();
-            ergodox_right_led_3_off();
+            // blue/green - reverse dvorak gaming
+            ergodox_right_led_1_off();
+            ergodox_right_led_2_on();
+            ergodox_right_led_3_on();
             keymap_config.nkro = 1;
             break;
         default:
