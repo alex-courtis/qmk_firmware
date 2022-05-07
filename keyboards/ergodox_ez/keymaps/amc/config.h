@@ -3,10 +3,6 @@
   See config.h options at https://docs.qmk.fm/#/config_options?id=the-configh-file
 */
 
-#ifdef NKRO_ENABLE
-#define FORCE_NKRO
-#endif
-
 // ergodox_ez: 30
 // #define DEBOUNCE
 
