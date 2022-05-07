@@ -30,21 +30,38 @@ layer_state_t layer_state_set_user(layer_state_t layer_state) {
 
     uint8_t layer = biton32(layer_state);
 
+    // clear to prevent stuck keys as per command_common
+    clear_keyboard();
+
     // layer indicator
     switch (layer) {
         case 1:
-            // blue
+            // blue - poor man's DFK
+            ergodox_right_led_1_off();
             ergodox_right_led_2_off();
             ergodox_right_led_3_on();
+            keymap_config.nkro = 1;
             break;
         case 2:
-            // green
+            // green - qwerty gaming
+            ergodox_right_led_1_off();
             ergodox_right_led_2_on();
             ergodox_right_led_3_off();
+            keymap_config.nkro = 1;
             break;
-        default:
+        case 3:
+            // red - reverse dvorak gaming
+            ergodox_right_led_1_on();
             ergodox_right_led_2_off();
             ergodox_right_led_3_off();
+            keymap_config.nkro = 1;
+            break;
+        default:
+            // no leds - vanilla
+            ergodox_right_led_1_off();
+            ergodox_right_led_2_off();
+            ergodox_right_led_3_off();
+            keymap_config.nkro = 1;
             break;
     }
 
