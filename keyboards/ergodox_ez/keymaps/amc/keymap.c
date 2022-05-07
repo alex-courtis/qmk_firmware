@@ -61,7 +61,7 @@ layer_state_t layer_state_set_user(layer_state_t layer_state) {
             ergodox_right_led_1_off();
             ergodox_right_led_2_off();
             ergodox_right_led_3_off();
-            keymap_config.nkro = 1;
+            keymap_config.nkro = 0;
             break;
     }
 
