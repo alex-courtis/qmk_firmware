@@ -76,11 +76,11 @@
       "KC_ENT",
       "KC_SPC",
       "KC_TAB",
-      "KC_LGUI",
+      "KC_LCTL",
       "KC_RGUI",
       "KC_DEL",
       "LCTL(KC_LALT)",
-      "LSFT(KC_INS)",
+      "KC_LALT",
       "RSFT(KC_INS)",
       "RCTL(KC_RALT)"
     ]
