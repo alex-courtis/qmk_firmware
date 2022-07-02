@@ -5,8 +5,8 @@
 
 // layers in this repo are different to zsa
 #define PLANCK_EZ_LED_LOWER 1
-#define PLANCK_EZ_LED_RAISE 2
-#define PLANCK_EZ_LED_ADJUST 3
+#define PLANCK_EZ_LED_RAISE 3
+#define PLANCK_EZ_LED_ADJUST 2
 
 #ifdef NKRO_ENABLE
 #define FORCE_NKRO
