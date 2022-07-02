@@ -6,5 +6,5 @@ MCU = atmega32u4
 teensy-loader-cli:
 /usr/lib/udev/rules.d/00-teensy.rules
 
-qmk json2c amc.json > km.c
+util/docker_cmd.sh qmk json2c amc_ergodox/amc.json > amc_ergodox/km.c
 util/docker_build.sh ergodox_ez:amc:flash
