@@ -6,6 +6,6 @@ feed:6060 OLKB Planck
 dfu-util:
 /usr/lib/udev/rules.d/60-dfuse.rules
 
-qmk json2c amc.json > km.c
+util/docker_cmd.sh qmk json2c amc_planck/amc.json > amc_planck/km.c
 util/docker_build.sh planck/ez/glow:amc:flash
 
