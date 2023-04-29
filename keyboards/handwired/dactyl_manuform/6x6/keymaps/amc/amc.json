@@ -79,10 +79,10 @@
       "KC_LALT",
       "KC_RALT",
       "KC_DEL",
-      "LCTL(KC_LGUI)",
+      "LCTL(KC_LSFT)",
       "KC_LCTL",
       "RSFT(KC_INS)",
-      "RCTL(KC_RGUI)"
+      "RCTL(KC_RSFT)"
     ]
   ],
   "author": ""
