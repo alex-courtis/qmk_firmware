@@ -22,10 +22,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define FORCE_NKRO
 #endif
 
-// default is not regex friendly
-#undef PRODUCT
-#define PRODUCT    Dactyl-Manuform-6x6
-
 #define USE_SERIAL
 
 #define MASTER_LEFT
