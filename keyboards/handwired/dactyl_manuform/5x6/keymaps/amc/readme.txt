@@ -1,10 +1,18 @@
-???
-MCU = ???
-BOOTLOADER = ???
 239a:80f4 Adafruit Pico
 2e8a:0003 Raspberry Pi RP2 Boot
 
-util/docker_cmd.sh qmk json2c amc_dactyl/amc.json -o amc_dactyl/km.c
-util/docker_build.sh handwired/dactyl_manuform/6x6:amc:flash
+Device uses https://github.com/KMKfw/kmk_firmware and is not directly flashed; it runs some python on boot which loads the json configuration.
 
-Program the left first then disable MASTER_LEFT and program right
+The mapping for the square cluster at the bottom left/right is rotated 90degrees anticlockwise / clockwise. See rotation.png
+
+Define keys at https://config.qmk.fm/#/handwired/dactyl_manuform/5x6/LAYOUT_5x6 and save as keymap.json
+
+Hold down top left / top right key for 5 seconds while reconnecting.
+
+udisksctl mount -b /dev/sda1
+cp keymap.json $(findmnt -n -o TARGET /dev/sda1)
+udisksctl unmount -b /dev/sda1
+sync
+
+Reconnect
+
