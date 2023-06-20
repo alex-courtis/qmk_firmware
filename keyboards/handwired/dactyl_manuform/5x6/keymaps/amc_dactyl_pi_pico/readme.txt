@@ -1,6 +1,8 @@
 239a:80f4 Adafruit Pico
 2e8a:0003 Raspberry Pi RP2 Boot
 
+Gateron pro g yellow
+
 Device uses https://github.com/KMKfw/kmk_firmware and is not directly flashed; it runs some python on boot which loads the json configuration.
 
 The mapping for the square cluster at the bottom left/right is rotated 90degrees anticlockwise / clockwise. See rotation.png
