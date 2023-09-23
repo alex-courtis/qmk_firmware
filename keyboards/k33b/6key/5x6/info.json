@@ -1,0 +1,16 @@
+{
+	"keyboard_name": "Dactyl Manuform 5x6",
+	"manufacturer": "K33B",
+	"url": "https://k333b.com",
+	"maintainer": "K33B",
+	"usb": {
+		"vid": "0xF33B",
+		"pid": "0x3450",
+		"device_version": "1.0.0"
+	},
+	"layouts": {
+		"LAYOUT_5x6": {
+			"layout": [{"matrix": [0,0], "x": 0, "y": 0}]
+		}
+	}
+}
