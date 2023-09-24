@@ -1,0 +1,15 @@
+{
+	"keyboard_name": "Dactyl Manuform 5x6",
+	"manufacturer": "RR",
+	"maintainer": "RR",
+	"usb": {
+		"vid": "0xF33B",
+		"pid": "0x3451",
+		"device_version": "1.0.0"
+	},
+	"layouts": {
+		"LAYOUT_5x6_6": {
+			"layout": [{"matrix": [0,0], "x": 0, "y": 0}]
+		}
+	}
+}
