@@ -1,7 +1,7 @@
 {
 	"keyboard_name": "Dactyl Manuform 5x6",
 	"manufacturer": "RR",
-	"maintainer": "RR",
+	"maintainer": "amc",
 	"usb": {
 		"vid": "0xF33B",
 		"pid": "0x3451",
