@@ -10,9 +10,11 @@ Compile uf2
 util/docker_build.sh rr/6key/5x6:amc
 ```
 
-Enter bootloader and flash
+Enter bootloader and flash left:
 ```sh
 picotool load -v rr_6key_5x6_amc.uf2
 picotool reboot
 ```
+
+`#define MASTER_RIGHT` and flash right.
 
