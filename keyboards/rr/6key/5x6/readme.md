@@ -1,3 +1,5 @@
+Fixed has gateron pro g yellow
+
 Modify amc.json at https://config.qmk.fm
 
 Generate km.c
