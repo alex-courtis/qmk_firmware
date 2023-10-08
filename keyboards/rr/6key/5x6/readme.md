@@ -4,7 +4,7 @@ Modify amc.json at https://config.qmk.fm
 
 Generate km.c
 ```sh
-util/docker_cmd.sh qmk json2c amc_rr/amc.json -o amc_rr/km.c
+util/docker_cmd.sh qmk json2c amc_dactyl_rr/amc.json -o amc_dactyl_rr/km.c
 ```
 
 Compile uf2
