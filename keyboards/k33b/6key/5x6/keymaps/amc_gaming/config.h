@@ -4,4 +4,4 @@
 #define SPLIT_HAND_PIN GP27
 
 #undef PRODUCT
-#define PRODUCT "Dactyl Manuform 5x6"
+#define PRODUCT "Dactyl Gaming 5x6"
