@@ -2,8 +2,8 @@
 	"manufacturer": "RR",
 	"maintainer": "amc",
 	"usb": {
-		"vid": "0xDEAD",
-		"pid": "0xBEEF",
+        "vid": "0x444D",
+        "pid": "0x3536",
 		"device_version": "1.0.0"
 	},
 	"layouts": {
