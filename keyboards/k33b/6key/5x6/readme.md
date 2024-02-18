@@ -6,7 +6,7 @@ util/docker_cmd.sh qmk json2c amc_dactyl_5x6_k33b/keymaps/default/keymap.json -o
 util/docker_cmd.sh qmk json2c amc_dactyl_5x6_k33b/keymaps/gaming/keymap.json -o amc_dactyl_5x6_k33b/keymaps/gaming/km.c
 ```
 
-Left and right default, bootloader fn-equals:
+Left or right default, bootloader fn-equals:
 ```sh
 util/docker_build.sh k33b/6key/5x6:default
 picotool load -v k33b_6key_5x6_default.uf2

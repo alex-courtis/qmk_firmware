@@ -19,3 +19,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define WS2812_SPI_DRIVER SPID2
 #define WS2812_SPI_SCK_PIN B13
+
+// this is necessary only for the right side !?
+#ifdef NKRO_ENABLE
+#define FORCE_NKRO
+#endif
+
+#define USE_SERIAL
+
+#undef PRODUCT
+#define PRODUCT "Dactyl Manuform 6x6"
+
+// #define MASTER_LEFT
+#define MASTER_RIGHT
+
+//#define EE_HANDS
