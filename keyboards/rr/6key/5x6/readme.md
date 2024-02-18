@@ -11,13 +11,20 @@ picotool load -v rr_6key_5x6_default.uf2
 ```
 
 Right default, bootloader fn-equals:
-`#define MASTER_RIGHT`, recompile then flash default right:
+`#define MASTER_RIGHT`
 ```sh
 util/docker_build.sh rr/6key/5x6:default
 picotool load -v rr_6key_5x6_default.uf2
 ```
 
-Left or right gaming, bootloader fn(bottom)-equals:
+Left gaming, bootloader fn(bottom)-equals:
+```sh
+util/docker_build.sh rr/6key/5x6:gaming
+picotool load -v rr_6key_5x6_gaming.uf2
+```
+
+Right gaming, bootloader fn(bottom)-equals:
+`#define MASTER_RIGHT`
 ```sh
 util/docker_build.sh rr/6key/5x6:gaming
 picotool load -v rr_6key_5x6_gaming.uf2
