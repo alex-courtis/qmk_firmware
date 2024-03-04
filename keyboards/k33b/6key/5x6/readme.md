@@ -10,6 +10,12 @@ util/docker_build.sh k33b/6key/5x6:default
 picotool load -v k33b_6key_5x6_default.uf2
 ```
 
+Left or right tapdance:
+```sh
+util/docker_build.sh k33b/6key/5x6:tapdance
+picotool load -v k33b_6key_5x6_tapdance.uf2
+```
+
 Left or right gaming:
 ```sh
 util/docker_build.sh k33b/6key/5x6:gaming
