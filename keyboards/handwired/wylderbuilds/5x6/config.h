@@ -69,8 +69,10 @@
 // DOUBLE_TAP_MILLISEC: 150
 #define QUICK_TAP_TERM 150
 
-// consumption, mutex
+// consume on down
 #define HOLD_ON_OTHER_KEY_PRESS
+
+// consume on up
 // #define PERMISSIVE_HOLD
 
 // KEY on release without consumption
