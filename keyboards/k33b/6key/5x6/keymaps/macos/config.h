@@ -1,5 +1,5 @@
 #pragma once
 
 #undef PRODUCT
-#define PRODUCT "Dactyl macos 5x6"
+#define PRODUCT "k33b 5x6 macos"
 
