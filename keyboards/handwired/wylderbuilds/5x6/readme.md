@@ -18,6 +18,12 @@ rm -rf .build ; util/docker_build.sh handwired/wylderbuilds/5x6:tapdance
 sleep 5 ; picotool load -v handwired_wylderbuilds_5x6_tapdance.uf2 ; picotool reboot
 ```
 
+Left or right macos:
+```sh
+rm -rf .build ; util/docker_build.sh handwired/wylderbuilds/5x6:macos
+sleep 5 ; picotool load -v handwired_wylderbuilds_5x6_macos.uf2 ; picotool reboot
+```
+
 Left or right gaming:
 ```sh
 rm -rf .build ; util/docker_build.sh handwired/wylderbuilds/5x6:gaming
