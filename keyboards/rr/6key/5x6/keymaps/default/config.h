@@ -3,4 +3,4 @@
 #define MASTER_RIGHT
 
 #undef PRODUCT
-#define PRODUCT "Dactyl Manuform 5x6"
+#define PRODUCT "rr 5x6 default"

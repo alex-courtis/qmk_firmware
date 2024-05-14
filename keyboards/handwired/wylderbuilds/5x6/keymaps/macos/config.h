@@ -3,4 +3,4 @@
 #define FORCE_NKRO
 
 #undef PRODUCT
-#define PRODUCT "Dactyl macos 5x6"
+#define PRODUCT "wylderbuilds 5x6 macos"
