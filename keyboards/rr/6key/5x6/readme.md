@@ -30,6 +30,19 @@ rm -rf .build ; util/docker_build.sh rr/6key/5x6:tapdance
 sleep 5 ; picotool load -v rr_6key_5x6_tapdance.uf2 ; picotool reboot
 ```
 
+Left macos:
+```sh
+rm -rf .build ; util/docker_build.sh rr/6key/5x6:macos
+sleep 5 ; picotool load -v rr_6key_5x6_macos.uf2 ; picotool reboot
+```
+
+Right macos:
+`#define MASTER_RIGHT`
+```sh
+rm -rf .build ; util/docker_build.sh rr/6key/5x6:macos
+sleep 5 ; picotool load -v rr_6key_5x6_macos.uf2 ; picotool reboot
+```
+
 Left gaming:
 ```sh
 rm -rf .build ; util/docker_build.sh rr/6key/5x6:gaming
