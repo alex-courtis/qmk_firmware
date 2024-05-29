@@ -68,8 +68,8 @@
       "KC_RALT",
       "RCTL_T(KC_DEL)",
       "KC_LGUI",
-      "LSFT(KC_LGUI)",
-      "RSFT(KC_RGUI)",
+      "KC_LSFT",
+      "KC_RSFT",
       "KC_RGUI"
     ],
     [
