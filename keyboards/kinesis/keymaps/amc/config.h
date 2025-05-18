@@ -1,7 +1,5 @@
 #pragma once
 
-#define FORCE_NKRO
-
 // TAP_MILLISEC: 200
 #define TAPPING_TERM 200
 
