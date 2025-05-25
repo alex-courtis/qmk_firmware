@@ -267,36 +267,36 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 [7] = LAYOUT(
            KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-           KC_TRNS  ,KC_X     ,KC_COMM  ,KC_D     ,KC_O     ,KC_K     ,
-           KC_TRNS  ,KC_A     ,KC_SCLN  ,KC_H     ,KC_Y     ,KC_U     ,
-           TO(0)    ,KC_SLSH  ,KC_B     ,KC_I     ,KC_DOT   ,KC_N     ,
-                     KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+           KC_EQL   ,KC_1     ,KC_2     ,KC_3     ,KC_4     ,KC_5     ,
+           KC_TRNS  ,KC_SCLN  ,KC_COMM  ,KC_DOT   ,KC_P     ,KC_Y     ,
+           KC_TRNS  ,KC_A     ,KC_O     ,KC_E     ,KC_U     ,KC_I     ,
+           TO(0)    ,KC_QUOT  ,KC_Q     ,KC_J     ,KC_K     ,KC_X     ,
+                     KC_GRV   ,KC_BSLS  ,KC_LEFT  ,KC_RIGHT ,
 
-                                                             KC_LGUI            ,KC_LSFT            ,
+                                                             LGUI_T(KC_TAB)     ,KC_LSFT            ,
                                                                                  KC_LALT            ,
                                          LSFT_T(KC_BSPC)    ,LCAG_T(KC_ESC)     ,LCTL_T(KC_TAB)     ,
 
 
 
            KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-                                         KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-                                         KC_T     ,KC_F     ,KC_G     ,KC_S     ,KC_R     ,KC_TRNS  ,
-                                         KC_J     ,KC_C     ,KC_V     ,KC_P     ,KC_Q     ,KC_Z     ,
-                                         KC_L     ,KC_M     ,KC_W     ,KC_E     ,KC_LBRC  ,KC_TRNS  ,
-                                                   KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+                                         KC_6     ,KC_7     ,KC_8     ,KC_9     ,KC_0     ,KC_MINS  ,
+                                         KC_F     ,KC_G     ,KC_C     ,KC_R     ,KC_L     ,KC_SLSH  ,
+                                         KC_D     ,KC_H     ,KC_T     ,KC_N     ,KC_S     ,KC_MINS  ,
+                                         KC_B     ,KC_M     ,KC_W     ,KC_V     ,KC_Z     ,KC_NO    ,
+                                                   KC_UP    ,KC_DOWN  ,KC_LBRC  ,KC_RBRC  ,
 
-           KC_RSFT            ,KC_RGUI            ,
+           KC_RSFT            ,RGUI_T(KC_DEL)     ,
            KC_RALT            ,
            RCTL_T(KC_DEL)     ,RCAG_T(KC_ENT)     ,RSFT_T(KC_SPC)
     ),
 [8] = LAYOUT(
            KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-           TO(0)    ,TO(1)    ,TO(2)    ,TO(3)    ,TO(4)    ,TO(5)    ,
-           TO(6)    ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-           MO(8)    ,TO(7)    ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-                     KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+           TO(0)    ,TO(1)    ,TO(2)    ,TO(3)    ,KC_NO    ,KC_NO    ,
+           KC_NO    ,KC_NO    ,KC_NO    ,KC_NO    ,KC_NO    ,KC_NO    ,
+           KC_NO    ,KC_NO    ,KC_NO    ,KC_NO    ,KC_NO    ,KC_NO    ,
+           MO(8)    ,TO(7)    ,KC_NO    ,KC_NO    ,KC_NO    ,KC_NO    ,
+                     KC_NO    ,KC_NO    ,KC_NO    ,KC_NO    ,
 
                                                              KC_TRNS            ,KC_TRNS            ,
                                                                                  KC_TRNS            ,
@@ -309,7 +309,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                        KC_PGUP,LGUI(KC_LEFT),KC_UP,LGUI(KC_RIGHT),KC_HOME  ,KC_PSCR  ,
                                          KC_PGDN  ,KC_LEFT  ,KC_DOWN  ,KC_RIGHT ,KC_END   ,KC_APP   ,
                                          KC_F7    ,KC_F8    ,KC_F9    ,KC_F10   ,KC_F11   ,KC_F12   ,
-                                                   KC_TRNS  ,KC_CAPS  ,KC_NUM   ,KC_TRNS  ,
+                                                   KC_NO    ,KC_CAPS  ,KC_NUM   ,KC_NO    ,
 
            KC_TRNS            ,KC_TRNS            ,
            KC_TRNS            ,
