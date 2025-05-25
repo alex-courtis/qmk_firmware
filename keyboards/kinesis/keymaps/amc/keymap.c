@@ -96,9 +96,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            KC_GRV   ,KC_Q     ,KC_W     ,KC_E     ,KC_R     ,KC_T     ,
            KC_RBRC  ,KC_A     ,KC_S     ,KC_D     ,KC_F     ,KC_G     ,
            MO(8)    ,KC_Z     ,KC_X     ,KC_C     ,KC_V     ,KC_B     ,
-                     KC_LALT  ,KC_LEFT  ,KC_RIGHT ,KC_LGUI  ,
+                     KC_F1    ,KC_LEFT  ,KC_RIGHT ,KC_F2    ,
 
-                                                             KC_LGUI            ,KC_LSFT            ,
+                                                             LGUI_T(KC_TAB)     ,KC_LSFT            ,
                                                                                  KC_LALT            ,
                                          LSFT_T(KC_BSPC)    ,LCAG_T(KC_ESC)     ,LCTL_T(KC_TAB)     ,
 
@@ -109,9 +109,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                          KC_Y     ,KC_U     ,KC_I     ,KC_O     ,KC_P     ,KC_LBRC  ,
                                          KC_H     ,KC_J     ,KC_K     ,KC_L     ,KC_SCLN  ,KC_QUOT  ,
                                          KC_N     ,KC_M     ,KC_COMM  ,KC_DOT   ,KC_SLSH  ,KC_BSLS  ,
-                                                   KC_RGUI  ,KC_UP    ,KC_DOWN  ,KC_RALT  ,
+                                                   KC_F3    ,KC_UP    ,KC_DOWN  ,KC_F4    ,
 
-           KC_RSFT            ,KC_RGUI            ,
+           KC_RSFT            ,RGUI_T(KC_DEL)     ,
            KC_RALT            ,
            RCTL_T(KC_DEL)     ,RCAG_T(KC_ENT)     ,RSFT_T(KC_SPC)
     ),
@@ -123,7 +123,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
                      KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
 
-                                                             LGUI_T(KC_TAB)     ,KC_LSFT            ,
+                                                             KC_LGUI            ,KC_LSFT            ,
                                                                                  KC_LALT            ,
                                          LSFT_T(KC_BSPC)    ,LCAG_T(KC_ESC)     ,LCTL_T(KC_TAB)     ,
 
@@ -136,7 +136,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                          KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
                                                    KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
 
-           KC_RSFT            ,RGUI_T(KC_DEL)     ,
+           KC_RSFT            ,KC_RGUI            ,
            KC_RALT            ,
            RCTL_T(KC_DEL)     ,RCAG_T(KC_ENT)     ,RSFT_T(KC_SPC)
     ),
@@ -150,33 +150,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                                                              LCTL_T(KC_TAB)     ,KC_LALT            ,
                                                                                  KC_LSFT            ,
-                                         LSFT_T(KC_BSPC)    ,LCAG_T(KC_ESC)     ,KC_LGUI            ,
-
-
-
-           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-                                         KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-                                         KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-                                         KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-                                         KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-                                                   KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-
-           KC_RALT            ,RCTL_T(KC_DEL)     ,
-           KC_RSFT            ,
-           KC_RGUI            ,RCAG_T(KC_ENT)     ,RSFT_T(KC_SPC)
-    ),
-[3] = LAYOUT(
-           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-                     KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
-
-
-                                                             LCTL_T(KC_TAB)     ,KC_LALT            ,
-                                                                                 KC_LSFT            ,
                                          LSFT_T(KC_BSPC)    ,LCAG_T(KC_ESC)     ,LGUI_T(KC_TAB)     ,
+
 
 
            KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
@@ -189,6 +164,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            KC_RALT            ,RCTL_T(KC_DEL)     ,
            KC_RSFT            ,
            RGUI_T(KC_DEL)     ,RCAG_T(KC_ENT)     ,RSFT_T(KC_SPC)
+    ),
+[3] = LAYOUT(
+           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+                     KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+
+
+                                                             LCTL_T(KC_TAB)     ,KC_LALT            ,
+                                                                                 KC_LSFT            ,
+                                         LSFT_T(KC_BSPC)    ,LCAG_T(KC_ESC)     ,KC_LGUI            ,
+
+
+           KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+                                         KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+                                         KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+                                         KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+                                         KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+                                                   KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
+
+           KC_RALT            ,RCTL_T(KC_DEL)     ,
+           KC_RSFT            ,
+           KC_RGUI            ,RCAG_T(KC_ENT)     ,RSFT_T(KC_SPC)
     ),
 [4] = LAYOUT(
            KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,
