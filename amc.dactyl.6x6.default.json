@@ -81,7 +81,7 @@
       "KC_DEL",
       "LCTL(KC_LSFT)",
       "KC_LCTL",
-      "RSFT(KC_INS)",
+      "KC_PASTE",
       "RCTL(KC_RSFT)"
     ],
     [

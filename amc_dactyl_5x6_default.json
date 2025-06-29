@@ -69,7 +69,7 @@
       "RCTL_T(KC_DEL)",
       "LCTL(KC_LSFT)",
       "KC_LCTL",
-      "RGUI(KC_F12)",
+      "KC_PASTE",
       "RCTL(KC_RSFT)"
     ],
     [
