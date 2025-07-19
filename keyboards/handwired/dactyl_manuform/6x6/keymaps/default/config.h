@@ -25,9 +25,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL
 
 #undef PRODUCT
-#define PRODUCT "ohkeycaps 6x6 gaming"
+#define PRODUCT "ohkeycaps 6x6 default"
 
-#define MASTER_LEFT
-// #define MASTER_RIGHT
+// #define MASTER_LEFT
+#define MASTER_RIGHT
 
 //#define EE_HANDS
