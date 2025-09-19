@@ -14,8 +14,3 @@ Left gaming:
 util/docker_build.sh handwired/dactyl_manuform/6x6:gaming:flash
 ```
 
-Right gaming:
-`#define MASTER_RIGHT`
-```sh
-util/docker_build.sh handwired/dactyl_manuform/6x6:gaming:flash
-```
